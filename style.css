@@ -1,4 +1,4 @@
-body{
+ body{
 
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body{
 .task-table{
     background-color: rgb(239,239,239);
     width: 60%;
-    /* height: 500px; */
+    /* height: 500px;*/ 
     margin: 130px;
    
 }
@@ -70,4 +70,113 @@ button{
 .done{
     background-color: rgb(81, 255, 0);
 }
+
+.hidden {
+    display: none;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #a3b7e999;
+  }
+  .modal-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 27rem;
+    width: 23rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: white;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #96969665;
+    margin-bottom: 0.5rem;
+  }
+  .header i {
+    font-size: 1.3rem;
+  }
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+  }
+  .modal-content label {
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .modal-content input {
+    height: 2.75rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #727272;
+    outline: none;
+  }
+  
+  .modal-content input:focus {
+    background-color: #c0c8de38;
+    border: none;
+  }
+ 
+  .modal-content button {
+    height: 3rem;
+    background-color: #6a93f8;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: 0.7s;
+  }
+  .modal-content button:hover {
+    transform: translateY(0.5rem);
+  }
+ 
+  @media (max-width: 450px) {
+    .modal-window {
+      width: 18rem;
+      left: 50%;
+      transform: translateX(-56%);
+    }
+    .task-table{
+      
+      width: 100%;
+      
+     
+  }
+
+  }
+
+  @media (max-width: 768px) {
+    .task {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 480px) {
+    .task {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task h2 {
+      font-size: 0.9em;
+    }
+  
+    .circular {
+      padding: 5px;
+      font-size: 1em;
+    }
+  }
+
+ 
 
